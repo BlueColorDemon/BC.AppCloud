@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BC.AppCloud", "BC.AppCloud\BC.AppCloud.csproj", "{7D7F0438-F149-48C6-9F6D-12027518D2F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BC.AppCloud.Entity", "BC.AppCloud.Entity\BC.AppCloud.Entity.csproj", "{D456E556-8B91-4FC9-B275-8BE9A0DCFD68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BC.AppCloud.Common", "BC.AppCloud.Common\BC.AppCloud.Common.csproj", "{6254056C-9C91-4794-AFC9-7A71E42DC84B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BC.AppCloud.DAL", "BC.AppCloud.DAL\BC.AppCloud.DAL.csproj", "{EB5BBD9E-9F9D-47BB-BA01-90C55184CABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BC.AppCloud.BLL", "BC.AppCloud.BLL\BC.AppCloud.BLL.csproj", "{6BC1FCB7-23DD-4515-941B-42EF744C86A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "基础类", "基础类", "{A897B24D-E08A-4876-9797-ABC52DCEAA67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D7F0438-F149-48C6-9F6D-12027518D2F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D7F0438-F149-48C6-9F6D-12027518D2F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D7F0438-F149-48C6-9F6D-12027518D2F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D7F0438-F149-48C6-9F6D-12027518D2F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D456E556-8B91-4FC9-B275-8BE9A0DCFD68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D456E556-8B91-4FC9-B275-8BE9A0DCFD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D456E556-8B91-4FC9-B275-8BE9A0DCFD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D456E556-8B91-4FC9-B275-8BE9A0DCFD68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6254056C-9C91-4794-AFC9-7A71E42DC84B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6254056C-9C91-4794-AFC9-7A71E42DC84B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6254056C-9C91-4794-AFC9-7A71E42DC84B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6254056C-9C91-4794-AFC9-7A71E42DC84B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB5BBD9E-9F9D-47BB-BA01-90C55184CABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB5BBD9E-9F9D-47BB-BA01-90C55184CABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB5BBD9E-9F9D-47BB-BA01-90C55184CABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB5BBD9E-9F9D-47BB-BA01-90C55184CABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BC1FCB7-23DD-4515-941B-42EF744C86A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BC1FCB7-23DD-4515-941B-42EF744C86A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BC1FCB7-23DD-4515-941B-42EF744C86A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BC1FCB7-23DD-4515-941B-42EF744C86A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D456E556-8B91-4FC9-B275-8BE9A0DCFD68} = {A897B24D-E08A-4876-9797-ABC52DCEAA67}
+		{6254056C-9C91-4794-AFC9-7A71E42DC84B} = {A897B24D-E08A-4876-9797-ABC52DCEAA67}
+		{EB5BBD9E-9F9D-47BB-BA01-90C55184CABA} = {A897B24D-E08A-4876-9797-ABC52DCEAA67}
+		{6BC1FCB7-23DD-4515-941B-42EF744C86A7} = {A897B24D-E08A-4876-9797-ABC52DCEAA67}
+	EndGlobalSection
+EndGlobal

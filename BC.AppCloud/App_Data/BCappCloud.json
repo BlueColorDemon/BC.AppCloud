@@ -1,0 +1,21 @@
+﻿{
+    "appCloud": "App池",
+    "orgGroup": [
+        {
+
+            "name": "企业A",
+            "desc": "说明",
+            "appGroup": [
+                {
+
+                    "name": "行政app",
+                    "desc": "说明",
+                    "config": {
+                        "baseframe": { },
+                        "custom": [ ]
+                    }
+                }
+            ]
+        }
+    ]
+}

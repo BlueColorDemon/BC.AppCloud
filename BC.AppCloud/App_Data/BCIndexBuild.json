@@ -1,0 +1,38 @@
+{
+    "theme_A": {
+        "header": {
+            "name": "页头",
+            "frame": {
+                "url_template": "value"
+            }
+        },
+        "content": [
+            {
+                "name": "天气预报",
+                "frame": {
+                    "url_template": "value"
+                }
+            },
+            {
+                "name": "九宫格导航",
+                "frame": {
+                    "url_template": "value",
+                    "tpl_json": "value"
+                }
+            },
+            {
+                "name": "通知列表",
+                "frame": {
+                    "url_template": "value"
+                }
+            }
+        ],
+        "footer": {
+            "name": "页脚_底部导航",
+            "frame": {
+                "url_template": "value"
+            }
+        }
+    },
+    "theme_B": {}
+}

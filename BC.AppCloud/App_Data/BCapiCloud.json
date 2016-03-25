@@ -1,0 +1,49 @@
+{
+    "apiCloud": "接口池",
+    "projectList": [
+        {
+            "id": "项目编号",
+            "name": "名称",
+            "moduleList": [
+                {
+                    "id": "模块编号",
+                    "name": "名称",
+                    "functionList": [
+                        {
+                            "id": "功能编号",
+                            "name": "名称",
+                            "pageList": [
+                                {
+                                    "id": "页面编号",
+                                    "name": "名称",
+                                    "designSketch": "效果图",
+                                    "authorPage": "开发者-页面",
+                                    "url": "页面",
+                                    "demoUrl": "示例-页面",
+                                    "api": [
+                                        {
+                                            "id": "接口-编号",
+                                            "code": "接口-代码",
+                                            "name": "功能-名称",
+                                            "desc": "功能-描述",
+                                            "url": "接口-地址",
+                                            "urlParam": "接口-地址参数说明",
+                                            "platformUrl": "第三方地址",
+                                            "debugUrl": "接口-调试地址",
+                                            "readMe": "接口-说明",
+                                            "attention": "注意事项",
+                                            "demoJson": "调用示例",
+                                            "backData": "返回-示例数据",
+                                            "backParam": "返回-参数说明",
+                                            "authorApi": "开发者-api"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

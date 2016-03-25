@@ -1,0 +1,627 @@
+{
+    "functionCloud": "功能池",
+    "baseframe": { },
+    "customGroup": {
+        "startPage": {
+            "name": "启动页",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "login": {
+            "name": "登录",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "index": {
+            "name": "首页",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "about": {
+            "name": "关于",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "update": {
+            "name": "更新",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "contacts": {
+            "name": "通讯录",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "notice": {
+            "name": "通知公告",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "news": {
+            "name": "新闻中心",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "timeTable": {
+            "name": "课程表",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "salary": {
+            "name": "工资",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "onlineSurvey": {
+            "name": "在线调查",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "toDo": {
+            "name": "待办事项",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "mail": {
+            "name": "站内信",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "workPlan": {
+            "name": "工作计划",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "log": {
+            "name": "工作日志",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "sign": {
+            "name": "签到（是否需要自动签到）",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "yunFile": {
+            "name": "云盘",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "workflow": {
+            "name": "审批",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "telMeeting": {
+            "name": "电话会议",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "customerInfo": {
+            "name": "客户信息",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "visitPlan": {
+            "name": "拜访计划",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "chat": {
+            "name": "聊天",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        },
+        "message": {
+            "name": "消息",
+            "list": [
+                {
+                    "id": "a01",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": true
+                },
+                {
+                    "id": "a02",
+                    "name": "名称",
+                    "desc": "描述",
+                    "init": {},
+                    "isSingle": false,
+                    "itemGroup": [
+                        {
+                            "itemId": "a01"
+                        },
+                        {
+                            "itemId": "b01"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

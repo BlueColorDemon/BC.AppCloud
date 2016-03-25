@@ -1,0 +1,37 @@
+﻿<#@ output extension=".cs" #>
+<#@ include file="MultiOutput.tt" #>
+
+<#
+	 List<string> names=new List<string>(){};
+	 names.Add("AppCloud_Baseframe");
+	 names.Add("AppCloud_Config");
+	 names.Add("AppCloud_AppGroupItem");
+	 names.Add("AppCloud_OrgGroupItem");
+foreach (string name in names)
+    {
+#>
+using BC.AppCloud.DAL;
+using BC.AppCloud.Entity.AppCloud;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BC.AppCloud.BLL.AppCloud
+{
+    public partial class <#= name #>BLL : BaseBLL<<#= name #>>
+    {
+        private readonly BaseDAL<<#= name #>> _<#= name #>Dal;
+        public <#= name #>BLL()
+            : base()
+        {
+            _<#= name #>Dal = base.Dal;
+        }
+    }
+}
+    <# SaveOutput(""+name+"BLL.cs"); #>
+<#
+}
+DeleteOldOutputs();
+#>
