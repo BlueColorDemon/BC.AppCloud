@@ -5,147 +5,139 @@ using System.Web;
 
 namespace BC.AppCloud.Entity.ApiCloud
 {
-    public class ApiItem
+    public class ApiCloud_ApiRequestInputItem : BaseModel
     {
         /// <summary>
-        /// 接口-编号
+        /// 排序号
         /// </summary>
-        public string id { get; set; }
+        public string inputNo { get; set; }
+        /// <summary>
+        /// 参数名
+        /// </summary>
+        public string inputName { get; set; }
+        /// <summary>
+        /// 描述
+        /// </summary>
+        public string inputDesc { get; set; }
+        /// <summary>
+        /// 类型
+        /// </summary>
+        public string inputType { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string inputRequired { get; set; }
+        /// <summary>
+        /// 参数位置
+        /// </summary>
+        public string inputPosition { get; set; }
+        /// <summary>
+        /// 范围
+        /// </summary>
+        public string inputRange { get; set; }
+        /// <summary>
+        /// 默认值
+        /// </summary>
+        public string inputDefault { get; set; }
+        /// <summary>
+        /// 说明
+        /// </summary>
+        public string inputExplain { get; set; }
+    }
+
+    public class ApiCloud_ApiResponseOutputItem : BaseModel
+    {
+        /// <summary>
+        /// 排序号
+        /// </summary>
+        public string outputNo { get; set; }
+        /// <summary>
+        /// 参数名
+        /// </summary>
+        public string outputName { get; set; }
+        /// <summary>
+        /// 描述
+        /// </summary>
+        public string outputDesc { get; set; }
+        /// <summary>
+        /// 类型
+        /// </summary>
+        public string outputType { get; set; }
+        /// <summary>
+        /// 说明
+        /// </summary>
+        public string outputExplain { get; set; }
+    }
+
+    public class ApiCloud_ApiListItem : BaseModel
+    {
         /// <summary>
         /// 接口-代码
         /// </summary>
-        public string code { get; set; }
+        public string apiCode { get; set; }
         /// <summary>
-        /// 功能-名称
+        /// 接口-名称
         /// </summary>
-        public string name { get; set; }
+        public string apiName { get; set; }
         /// <summary>
-        /// 功能-描述
+        /// 接口-描述
         /// </summary>
-        public string desc { get; set; }
+        public string apiDesc { get; set; }
+        /// <summary>
+        /// 接口-介绍
+        /// </summary>
+        public string apiInfo { get; set; }
         /// <summary>
         /// 接口-地址
         /// </summary>
-        public string url { get; set; }
+        public string apiUrl { get; set; }
         /// <summary>
-        /// 接口-地址参数说明
+        /// 接口-请求方法
         /// </summary>
-        public string urlParam { get; set; }
-        /// <summary>
-        /// 第三方地址
-        /// </summary>
-        public string platformUrl { get; set; }
-        /// <summary>
-        /// 接口-调试地址
-        /// </summary>
-        public string debugUrl { get; set; }
-        /// <summary>
-        /// 接口-说明
-        /// </summary>
-        public string readMe { get; set; }
-        /// <summary>
-        /// 注意事项
-        /// </summary>
-        public string attention { get; set; }
-        /// <summary>
-        /// 调用示例
-        /// </summary>
-        public string demoJson { get; set; }
-        /// <summary>
-        /// 返回-示例数据
-        /// </summary>
-        public string backData { get; set; }
-        /// <summary>
-        /// 返回-参数说明
-        /// </summary>
-        public string backParam { get; set; }
-        /// <summary>
-        /// 开发者-api
-        /// </summary>
-        public string authorApi { get; set; }
-    }
-
-    public class PageListItem
-    {
-        /// <summary>
-        /// 页面编号
-        /// </summary>
-        public string id { get; set; }
-        /// <summary>
-        /// 名称
-        /// </summary>
-        public string name { get; set; }
-        /// <summary>
-        /// 效果图
-        /// </summary>
-        public string designSketch { get; set; }
-        /// <summary>
-        /// 开发者-页面
-        /// </summary>
-        public string authorPage { get; set; }
-        /// <summary>
-        /// 页面
-        /// </summary>
-        public string url { get; set; }
-        /// <summary>
-        /// 示例-页面
-        /// </summary>
-        public string demoUrl { get; set; }
+        public string apiRequestMethod { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public List<ApiItem> api { get; set; }
-    }
-
-    public class FunctionListItem
-    {
+        public List<ApiCloud_ApiRequestInputItem> apiRequestInput { get; set; }
         /// <summary>
-        /// 功能编号
+        /// 接口-请求示例
         /// </summary>
-        public string id { get; set; }
+        public string apiRequestSample { get; set; }
         /// <summary>
-        /// 名称
+        /// 接口-请求备注
         /// </summary>
-        public string name { get; set; }
+        public string apiRequestRemarks { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public List<PageListItem> pageList { get; set; }
+        public List<ApiCloud_ApiResponseOutputItem> apiResponseOutput { get; set; }
+        /// <summary>
+        /// 接口-响应示例
+        /// </summary>
+        public string apiResponseSample { get; set; }
+        /// <summary>
+        /// 接口-响应备注
+        /// </summary>
+        public string apiResponseRemarks { get; set; }
     }
 
-    public class ModuleListItem
+    public class ApiCloud_ProjectListItem : BaseModel
     {
         /// <summary>
-        /// 模块编号
+        /// 项目代码
         /// </summary>
-        public string id { get; set; }
+        public string projectCode { get; set; }
         /// <summary>
-        /// 名称
+        /// 项目名称
         /// </summary>
-        public string name { get; set; }
+        public string projectName { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public List<FunctionListItem> functionList { get; set; }
+        public List<ApiCloud_ApiListItem> apiList { get; set; }
     }
 
-    public class ProjectListItem
-    {
-        /// <summary>
-        /// 项目编号
-        /// </summary>
-        public string id { get; set; }
-        /// <summary>
-        /// 名称
-        /// </summary>
-        public string name { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public List<ModuleListItem> moduleList { get; set; }
-    }
-
-    public class Root
+    public class ApiCloud_Root : BaseModel
     {
         /// <summary>
         /// 接口池
@@ -154,6 +146,6 @@ namespace BC.AppCloud.Entity.ApiCloud
         /// <summary>
         /// 
         /// </summary>
-        public List<ProjectListItem> projectList { get; set; }
+        public List<ApiCloud_ProjectListItem> projectList { get; set; }
     }
 }

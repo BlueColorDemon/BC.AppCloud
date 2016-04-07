@@ -2,46 +2,42 @@
     "apiCloud": "接口池",
     "projectList": [
         {
-            "id": "项目编号",
-            "name": "名称",
-            "moduleList": [
+            "projectCode": "项目代码",
+            "projectName": "项目名称",
+            "apiList": [
                 {
-                    "id": "模块编号",
-                    "name": "名称",
-                    "functionList": [
+                    "apiCode": "接口-代码",
+                    "apiName": "接口-名称",
+                    "apiDesc": "接口-描述",
+                    "apiInfo": "接口-介绍",
+                    "apiUrl": "接口-地址",
+                    "apiRequestMethod": "接口-请求方法",
+                    "apiRequestInput": [
                         {
-                            "id": "功能编号",
-                            "name": "名称",
-                            "pageList": [
-                                {
-                                    "id": "页面编号",
-                                    "name": "名称",
-                                    "designSketch": "效果图",
-                                    "authorPage": "开发者-页面",
-                                    "url": "页面",
-                                    "demoUrl": "示例-页面",
-                                    "api": [
-                                        {
-                                            "id": "接口-编号",
-                                            "code": "接口-代码",
-                                            "name": "功能-名称",
-                                            "desc": "功能-描述",
-                                            "url": "接口-地址",
-                                            "urlParam": "接口-地址参数说明",
-                                            "platformUrl": "第三方地址",
-                                            "debugUrl": "接口-调试地址",
-                                            "readMe": "接口-说明",
-                                            "attention": "注意事项",
-                                            "demoJson": "调用示例",
-                                            "backData": "返回-示例数据",
-                                            "backParam": "返回-参数说明",
-                                            "authorApi": "开发者-api"
-                                        }
-                                    ]
-                                }
-                            ]
+                            "inputNo": "排序号",
+                            "inputName": "参数名",
+                            "inputDesc": "描述",
+                            "inputType": "类型",
+                            "inputRequired": true,
+                            "inputPosition": "参数位置",
+                            "inputRange": "范围",
+                            "inputDefault": "默认值",
+                            "inputExplain": "说明"
                         }
-                    ]
+                    ],
+                    "apiRequestSample": "接口-请求示例",
+                    "apiRequestRemarks": "接口-请求备注",
+                    "apiResponseOutput": [
+                        {
+                            "outputNo": "排序号",
+                            "outputName": "参数名",
+                            "outputDesc": "描述",
+                            "outputType": "类型",
+                            "outputExplain": "说明"
+                        }
+                    ],
+                    "apiResponseSample": "接口-响应示例",
+                    "apiResponseRemarks": "接口-响应备注"
                 }
             ]
         }

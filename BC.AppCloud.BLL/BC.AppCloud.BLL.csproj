@@ -49,21 +49,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiCloud.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApiCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApiCloud_ApiListItemBLL.cs">
+      <DependentUpon>ApiCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApiCloud_ApiRequestInputItemBLL.cs">
+      <DependentUpon>ApiCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApiCloud_ApiResponseOutputItemBLL.cs">
+      <DependentUpon>ApiCloud.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApiCloud_ProjectListItemBLL.cs">
+      <DependentUpon>ApiCloud.tt</DependentUpon>
+    </Compile>
     <Compile Include="AppCloud.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AppCloud.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AppCloud_AppGroupItemBLL.cs">
-      <DependentUpon>AppCloud.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AppCloud_BaseframeBLL.cs">
-      <DependentUpon>AppCloud.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AppCloud_ConfigBLL.cs">
-      <DependentUpon>AppCloud.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AppCloud_OrgGroupItemBLL.cs">
       <DependentUpon>AppCloud.tt</DependentUpon>
     </Compile>
     <Compile Include="MultiOutput.cs">
@@ -93,6 +98,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ApiCloud.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ApiCloud.cs</LastGenOutput>
+    </Content>
     <Content Include="AppCloud.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AppCloud.cs</LastGenOutput>
@@ -107,6 +116,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ApiCloud\" />
     <Folder Include="AppCloud\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -57,9 +57,9 @@
     <Compile Include="BookCloud\BookCloud.cs" />
     <Compile Include="FunctionCloud\FunctionCloud.cs" />
     <Compile Include="IndexBuild\IndexBuild.cs" />
-    <Compile Include="Migrations\201603250340119_FirstMigration.cs" />
-    <Compile Include="Migrations\201603250340119_FirstMigration.Designer.cs">
-      <DependentUpon>201603250340119_FirstMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201604071729473_FirstMigration.cs" />
+    <Compile Include="Migrations\201604071729473_FirstMigration.Designer.cs">
+      <DependentUpon>201604071729473_FirstMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelAC.cs" />
@@ -73,8 +73,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201603250340119_FirstMigration.resx">
-      <DependentUpon>201603250340119_FirstMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604071729473_FirstMigration.resx">
+      <DependentUpon>201604071729473_FirstMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

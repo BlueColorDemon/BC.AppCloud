@@ -1,0 +1,666 @@
+﻿ @{ Layout = null; }
+
+<!DOCTYPE html>
+
+<html ng-app="infoApp">
+
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<title>Index</title>
+		@*
+		<link href="~/Content/bootstrap.css" rel="stylesheet" />*@
+		<script src="~/Lib/angular/angular.js"></script>
+		<style type="text/css">
+			.textCenter {
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>项目模块</h1>
+		<div data-ng-controller="projectController" style="background-color: cadetblue;">
+			<div>
+				<table border="1">
+					<tr class="textCenter">
+						<td style="width: 100px;">项目名称</td>
+						<td style="width: 60px;">项目代号</td>
+						<td style="width: 60px;"></td>
+					</tr>
+					<tr class="textCenter" data-ng-repeat="project in projectList">
+						<td>
+							<input type="text" data-ng-model="project.projectName" data-ng-click="getproject(project)" data-ng-keyup="modifyproject(project)" />
+						</td>
+						<td>
+							<input type="text" data-ng-model="project.projectCode" data-ng-click="getproject(project)" data-ng-keyup="modifyproject(project)" />
+						</td>
+						<td>
+							<input type="button" data-ng-click="delete(project.Id,$index)" value="删除" />
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div>
+				<fieldset>
+					<legend>项目详细信息</legend>
+					projectName：<input type="text" data-ng-model="nowproject.projectName" /> projectCode:
+					<input type="text" data-ng-model="nowproject.projectCode" />
+				</fieldset>
+			</div>
+
+			<div>
+				<fieldset>
+					<legend>新增项目信息</legend>
+					<table>
+						<tr>
+							<td style="width: 50px;">projectName:</td>
+							<td>
+								<input type="text" data-ng-model="newproject.projectName" />
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 50px;">projectCode:</td>
+							<td>
+								<input type="text" data-ng-model="newproject.projectCode" />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align: right;">
+								<input type="button" data-ng-click="addproject(newproject)" value="新增项目" />
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+			</div>
+			<!--  <input type="text" data-ng-model="full_name" placeholder="Enter your full name" />-->
+		</div>
+
+		<h1>接口模块</h1>
+		<div data-ng-controller="apiItemController" style="background-color:crimson;">
+			<div>
+				<table border="1">
+					<tr class="textCenter">
+						<td style="width: 100px;">项目名称</td>
+						<td style="width: 60px;">项目代号</td>
+						<td style="width: 60px;"></td>
+					</tr>
+					<tr class="textCenter" data-ng-repeat="project in projectList">
+						<td>
+							<input type="text" data-ng-model="project.projectName" data-ng-click="getproject(project)" data-ng-keyup="modifyproject(project)" />
+						</td>
+						<td>
+							<input type="text" data-ng-model="project.projectCode" data-ng-click="getproject(project)" data-ng-keyup="modifyproject(project)" />
+						</td>
+						<td>
+							<input type="button" data-ng-click="delete(project.Id,$index)" value="删除" />
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div>
+				<fieldset>
+					<legend>项目详细信息</legend>
+					projectName：<input type="text" data-ng-model="nowproject.projectName" /> projectCode:
+					<input type="text" data-ng-model="nowproject.projectCode" />
+				</fieldset>
+			</div>
+
+			<div>
+				<fieldset>
+					<legend>新增项目信息</legend>
+					<table>
+						<tr>
+							<td style="width: 50px;">projectName:</td>
+							<td>
+								<input type="text" data-ng-model="newproject.projectName" />
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 50px;">projectCode:</td>
+							<td>
+								<input type="text" data-ng-model="newproject.projectCode" />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align: right;">
+								<input type="button" data-ng-click="addproject(newproject)" value="新增项目" />
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+			</div>
+			<!--  <input type="text" data-ng-model="full_name" placeholder="Enter your full name" />-->
+		</div>
+
+		<h1>输入模块</h1>
+		<div data-ng-controller="inputController" style="background-color:darkgreen;">
+			<div>
+				<table border="1">
+					<tr class="textCenter">
+						<td style="width: 100px;">项目名称</td>
+						<td style="width: 60px;">项目代号</td>
+						<td style="width: 60px;"></td>
+					</tr>
+					<tr class="textCenter" data-ng-repeat="project in projectList">
+						<td>
+							<input type="text" data-ng-model="project.projectName" data-ng-click="getproject(project)" data-ng-keyup="modifyproject(project)" />
+						</td>
+						<td>
+							<input type="text" data-ng-model="project.projectCode" data-ng-click="getproject(project)" data-ng-keyup="modifyproject(project)" />
+						</td>
+						<td>
+							<input type="button" data-ng-click="delete(project.Id,$index)" value="删除" />
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div>
+				<fieldset>
+					<legend>项目详细信息</legend>
+					projectName：<input type="text" data-ng-model="nowproject.projectName" /> projectCode:
+					<input type="text" data-ng-model="nowproject.projectCode" />
+				</fieldset>
+			</div>
+
+			<div>
+				<fieldset>
+					<legend>新增项目信息</legend>
+					<table>
+						<tr>
+							<td style="width: 50px;">projectName:</td>
+							<td>
+								<input type="text" data-ng-model="newproject.projectName" />
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 50px;">projectCode:</td>
+							<td>
+								<input type="text" data-ng-model="newproject.projectCode" />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align: right;">
+								<input type="button" data-ng-click="addproject(newproject)" value="新增项目" />
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+			</div>
+			<!--  <input type="text" data-ng-model="full_name" placeholder="Enter your full name" />-->
+		</div>
+
+		<h1>输出模块</h1>
+		<div data-ng-controller="outputController" style="background-color:blueviolet;">
+			<div>
+				<table border="1">
+					<tr class="textCenter">
+						<td style="width: 100px;">项目名称</td>
+						<td style="width: 60px;">项目代号</td>
+						<td style="width: 60px;"></td>
+					</tr>
+					<tr class="textCenter" data-ng-repeat="project in projectList">
+						<td>
+							<input type="text" data-ng-model="project.projectName" data-ng-click="getproject(project)" data-ng-keyup="modifyproject(project)" />
+						</td>
+						<td>
+							<input type="text" data-ng-model="project.projectCode" data-ng-click="getproject(project)" data-ng-keyup="modifyproject(project)" />
+						</td>
+						<td>
+							<input type="button" data-ng-click="delete(project.Id,$index)" value="删除" />
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div>
+				<fieldset>
+					<legend>项目详细信息</legend>
+					projectName：<input type="text" data-ng-model="nowproject.projectName" /> projectCode:
+					<input type="text" data-ng-model="nowproject.projectCode" />
+				</fieldset>
+			</div>
+
+			<div>
+				<fieldset>
+					<legend>新增项目信息</legend>
+					<table>
+						<tr>
+							<td style="width: 50px;">projectName:</td>
+							<td>
+								<input type="text" data-ng-model="newproject.projectName" />
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 50px;">projectCode:</td>
+							<td>
+								<input type="text" data-ng-model="newproject.projectCode" />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align: right;">
+								<input type="button" data-ng-click="addproject(newproject)" value="新增项目" />
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+			</div>
+			<!--  <input type="text" data-ng-model="full_name" placeholder="Enter your full name" />-->
+		</div>
+
+		<script type="text/javascript">
+			var infoApp = angular.module('infoApp', []);
+			infoApp.controller('projectController', ['$scope', 'projectDataService',
+				function($scope, projectDataService) {
+					$scope.initailInfo = function() {
+						projectDataService.loadData().then(function(list) {
+							$scope.projectList = list.data;
+						});
+					};
+					$scope.$watch('nowproject.projectName', function(newVal, oldVal, scope) {
+						console.log(newVal + '------' + oldVal);
+					});
+					$scope.nowproject = {};
+					$scope.delete = function(projectId, index) { //note: the function name is important
+						if (confirm('are you sure delete this project?')) {
+							projectDataService.deleteprojectById(projectId).then(function(response) {
+								if (response.data === true) {
+									$scope.projectList.splice(index, 1);
+								} else {
+									console.log('delet uesr fail');
+								}
+							});
+						}
+					};
+					$scope.getproject = function(project) {
+						$scope.nowproject = project;
+					};
+					$scope.addproject = function(newproject) {
+						projectDataService.addproject(newproject).then(function(response) {
+							if (response.data === true) {
+								$scope.projectList.push(newproject);
+							} else {
+								console.log('add uesr fail');
+							}
+						});
+					};
+					$scope.modifyproject = function(newproject) {
+						projectDataService.modifyproject(newproject).then(function(response) {
+							if (response.data === true) {
+								$scope.projectList.push(newproject);
+							} else {
+								console.log('delet uesr fail');
+							}
+						});
+					};
+					$scope.initailInfo();
+				}
+			]);
+			infoApp.factory('projectDataService', ['projectHttpService', '$q', function(projectHttpService, $q) {
+				var serive = {};
+				serive.loadData = function() {
+					var defer = $q.defer();
+					projectHttpService.getproject().then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				serive.deleteprojectById = function(projectId) {
+					var defer = $q.defer();
+					projectHttpService.deleteprojectById(projectId).then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				serive.addproject = function(newproject) {
+					var defer = $q.defer();
+					projectHttpService.addproject(newproject).then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				serive.modifyproject = function(newproject) {
+					var defer = $q.defer();
+					projectHttpService.modifyproject(newproject).then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				return serive;
+			}]);
+			infoApp.factory('projectHttpService', ['$http', function($http) {
+				var serive = {};
+				serive.getproject = function() {
+					return $http.get('/api/project');
+				};
+				serive.deleteprojectById = function(projectId) {
+					return $http.delete('/api/project/' + projectId);
+				};
+				serive.addproject = function(newproject) {
+					return $http({
+						method: 'POST',
+						url: '/api/project/',
+						data: newproject
+					});
+				};
+				serive.modifyproject = function(newproject) {
+					return $http({
+						method: 'PUT',
+						url: '/api/project/',
+						data: newproject
+					});
+				};
+				return serive;
+			}]);
+			infoApp.controller('apiItemController', ['$scope', 'apiItemDataService',
+				function($scope, apiItemDataService) {
+					$scope.initailInfo = function() {
+						apiItemDataService.loadData().then(function(list) {
+							$scope.apiItemList = list.data;
+						});
+					};
+					$scope.$watch('nowapiItem.apiItemName', function(newVal, oldVal, scope) {
+						console.log(newVal + '------' + oldVal);
+					});
+					$scope.nowapiItem = {};
+					$scope.delete = function(apiItemId, index) { //note: the function name is important
+						if (confirm('are you sure delete this apiItem?')) {
+							apiItemDataService.deleteapiItemById(apiItemId).then(function(response) {
+								if (response.data === true) {
+									$scope.apiItemList.splice(index, 1);
+								} else {
+									console.log('delet uesr fail');
+								}
+							});
+						}
+					};
+					$scope.getapiItem = function(apiItem) {
+						$scope.nowapiItem = apiItem;
+					};
+					$scope.addapiItem = function(newapiItem) {
+						apiItemDataService.addapiItem(newapiItem).then(function(response) {
+							if (response.data === true) {
+								$scope.apiItemList.push(newapiItem);
+							} else {
+								console.log('add uesr fail');
+							}
+						});
+					};
+					$scope.modifyapiItem = function(newapiItem) {
+						apiItemDataService.modifyapiItem(newapiItem).then(function(response) {
+							if (response.data === true) {
+								$scope.apiItemList.push(newapiItem);
+							} else {
+								console.log('delet uesr fail');
+							}
+						});
+					};
+					$scope.initailInfo();
+				}
+			]);
+			infoApp.factory('apiItemDataService', ['apiItemHttpService', '$q', function(apiItemHttpService, $q) {
+				var serive = {};
+				serive.loadData = function() {
+					var defer = $q.defer();
+					apiItemHttpService.getapiItem().then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				serive.deleteapiItemById = function(apiItemId) {
+					var defer = $q.defer();
+					apiItemHttpService.deleteapiItemById(apiItemId).then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				serive.addapiItem = function(newapiItem) {
+					var defer = $q.defer();
+					apiItemHttpService.addapiItem(newapiItem).then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				serive.modifyapiItem = function(newapiItem) {
+					var defer = $q.defer();
+					apiItemHttpService.modifyapiItem(newapiItem).then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				return serive;
+			}]);
+			infoApp.factory('apiItemHttpService', ['$http', function($http) {
+				var serive = {};
+				serive.getapiItem = function() {
+					return $http.get('/api/apiItem');
+				};
+				serive.deleteapiItemById = function(apiItemId) {
+					return $http.delete('/api/apiItem/' + apiItemId);
+				};
+				serive.addapiItem = function(newapiItem) {
+					return $http({
+						method: 'POST',
+						url: '/api/apiItem/',
+						data: newapiItem
+					});
+				};
+				serive.modifyapiItem = function(newapiItem) {
+					return $http({
+						method: 'PUT',
+						url: '/api/apiItem/',
+						data: newapiItem
+					});
+				};
+				return serive;
+			}]);
+			infoApp.controller('inputController', ['$scope', 'inputDataService',
+				function($scope, inputDataService) {
+					$scope.initailInfo = function() {
+						inputDataService.loadData().then(function(list) {
+							$scope.inputList = list.data;
+						});
+					};
+					$scope.$watch('nowinput.inputName', function(newVal, oldVal, scope) {
+						console.log(newVal + '------' + oldVal);
+					});
+					$scope.nowinput = {};
+					$scope.delete = function(inputId, index) { //note: the function name is important
+						if (confirm('are you sure delete this input?')) {
+							inputDataService.deleteinputById(inputId).then(function(response) {
+								if (response.data === true) {
+									$scope.inputList.splice(index, 1);
+								} else {
+									console.log('delet uesr fail');
+								}
+							});
+						}
+					};
+					$scope.getinput = function(input) {
+						$scope.nowinput = input;
+					};
+					$scope.addinput = function(newinput) {
+						inputDataService.addinput(newinput).then(function(response) {
+							if (response.data === true) {
+								$scope.inputList.push(newinput);
+							} else {
+								console.log('add uesr fail');
+							}
+						});
+					};
+					$scope.modifyinput = function(newinput) {
+						inputDataService.modifyinput(newinput).then(function(response) {
+							if (response.data === true) {
+								$scope.inputList.push(newinput);
+							} else {
+								console.log('delet uesr fail');
+							}
+						});
+					};
+					$scope.initailInfo();
+				}
+			]);
+			infoApp.factory('inputDataService', ['inputHttpService', '$q', function(inputHttpService, $q) {
+				var serive = {};
+				serive.loadData = function() {
+					var defer = $q.defer();
+					inputHttpService.getinput().then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				serive.deleteinputById = function(inputId) {
+					var defer = $q.defer();
+					inputHttpService.deleteinputById(inputId).then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				serive.addinput = function(newinput) {
+					var defer = $q.defer();
+					inputHttpService.addinput(newinput).then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				serive.modifyinput = function(newinput) {
+					var defer = $q.defer();
+					inputHttpService.modifyinput(newinput).then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				return serive;
+			}]);
+			infoApp.factory('inputHttpService', ['$http', function($http) {
+				var serive = {};
+				serive.getinput = function() {
+					return $http.get('/api/input');
+				};
+				serive.deleteinputById = function(inputId) {
+					return $http.delete('/api/input/' + inputId);
+				};
+				serive.addinput = function(newinput) {
+					return $http({
+						method: 'POST',
+						url: '/api/input/',
+						data: newinput
+					});
+				};
+				serive.modifyinput = function(newinput) {
+					return $http({
+						method: 'PUT',
+						url: '/api/input/',
+						data: newinput
+					});
+				};
+				return serive;
+			}]);
+			infoApp.controller('outputController', ['$scope', 'outputDataService',
+				function($scope, outputDataService) {
+					$scope.initailInfo = function() {
+						outputDataService.loadData().then(function(list) {
+							$scope.outputList = list.data;
+						});
+					};
+					$scope.$watch('nowoutput.outputName', function(newVal, oldVal, scope) {
+						console.log(newVal + '------' + oldVal);
+					});
+					$scope.nowoutput = {};
+					$scope.delete = function(outputId, index) { //note: the function name is important
+						if (confirm('are you sure delete this output?')) {
+							outputDataService.deleteoutputById(outputId).then(function(response) {
+								if (response.data === true) {
+									$scope.outputList.splice(index, 1);
+								} else {
+									console.log('delet uesr fail');
+								}
+							});
+						}
+					};
+					$scope.getoutput = function(output) {
+						$scope.nowoutput = output;
+					};
+					$scope.addoutput = function(newoutput) {
+						outputDataService.addoutput(newoutput).then(function(response) {
+							if (response.data === true) {
+								$scope.outputList.push(newoutput);
+							} else {
+								console.log('add uesr fail');
+							}
+						});
+					};
+					$scope.modifyoutput = function(newoutput) {
+						outputDataService.modifyoutput(newoutput).then(function(response) {
+							if (response.data === true) {
+								$scope.outputList.push(newoutput);
+							} else {
+								console.log('delet uesr fail');
+							}
+						});
+					};
+					$scope.initailInfo();
+				}
+			]);
+			infoApp.factory('outputDataService', ['outputHttpService', '$q', function(outputHttpService, $q) {
+				var serive = {};
+				serive.loadData = function() {
+					var defer = $q.defer();
+					outputHttpService.getoutput().then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				serive.deleteoutputById = function(outputId) {
+					var defer = $q.defer();
+					outputHttpService.deleteoutputById(outputId).then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				serive.addoutput = function(newoutput) {
+					var defer = $q.defer();
+					outputHttpService.addoutput(newoutput).then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				serive.modifyoutput = function(newoutput) {
+					var defer = $q.defer();
+					outputHttpService.modifyoutput(newoutput).then(function(response) {
+						defer.resolve(response);
+					});
+					return defer.promise;
+				};
+				return serive;
+			}]);
+			infoApp.factory('outputHttpService', ['$http', function($http) {
+				var serive = {};
+				serive.getoutput = function() {
+					return $http.get('/api/output');
+				};
+				serive.deleteoutputById = function(outputId) {
+					return $http.delete('/api/output/' + outputId);
+				};
+				serive.addoutput = function(newoutput) {
+					return $http({
+						method: 'POST',
+						url: '/api/output/',
+						data: newoutput
+					});
+				};
+				serive.modifyoutput = function(newoutput) {
+					return $http({
+						method: 'PUT',
+						url: '/api/output/',
+						data: newoutput
+					});
+				};
+				return serive;
+			}]);
+		</script>
+	</body>
+
+</html>
