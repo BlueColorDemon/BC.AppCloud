@@ -13,7 +13,7 @@ namespace BC.AppCloud.Entity.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201604071729473_FirstMigration"; }
+            get { return "201604081007321_FirstMigration"; }
         }
         
         string IMigrationMetadata.Source
