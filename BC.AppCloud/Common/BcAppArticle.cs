@@ -11,6 +11,9 @@ namespace BC.AppCloud.Common
     {
         public static string GetStrByFilter(string sourceContent, string pattern, string replacement)
         {
+
+            "sssss".ToLower();
+
             Regex reg = new Regex("NAME=(.+);");
             string modified = reg.Replace("", "NAME=WANG;");
             return "";

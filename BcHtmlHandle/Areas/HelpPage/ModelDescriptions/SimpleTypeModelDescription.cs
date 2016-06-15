@@ -1,0 +1,6 @@
+namespace BcHtmlHandle.Areas.HelpPage.ModelDescriptions
+{
+    public class SimpleTypeModelDescription : ModelDescription
+    {
+    }
+}
