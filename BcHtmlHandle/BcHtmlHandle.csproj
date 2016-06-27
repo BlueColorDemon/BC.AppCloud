@@ -45,44 +45,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ivony.Core, Version=2.0.4588.22773, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\JumonyForMVC.2.0.0.5\lib\Ivony.Core.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Ivony.Core.dll</HintPath>
     </Reference>
     <Reference Include="Ivony.Html, Version=2.0.4588.32474, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\JumonyForMVC.2.0.0.5\lib\Ivony.Html.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ivony.Html.Binding, Version=1.1.4321.41894, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\JumonyForMVC.2.0.0.5\lib\Ivony.Html.Binding.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ivony.Html.Forms, Version=1.1.4588.32477, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\JumonyForMVC.2.0.0.5\lib\Ivony.Html.Forms.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Ivony.Html.dll</HintPath>
     </Reference>
     <Reference Include="Ivony.Html.Parser, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\JumonyForMVC.2.0.0.5\lib\Ivony.Html.Parser.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Ivony.Html.Parser.dll</HintPath>
     </Reference>
     <Reference Include="Ivony.Html.Parser.Regulars, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Jumony.Web.FullPack.3.2.1\lib\Ivony.Html.Parser.Regulars.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ivony.Html.Web, Version=2.0.4588.32477, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\JumonyForMVC.2.0.0.5\lib\Ivony.Html.Web.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ivony.Html.Web.Mvc, Version=2.0.4588.32477, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\JumonyForMVC.2.0.0.5\lib\Ivony.Html.Web.Mvc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ivony.Web, Version=1.1.5583.26611, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Jumony.Web.FullPack.3.2.1\lib\Ivony.Web.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ivony.Web.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Jumony.Web.FullPack.3.2.1\lib\Ivony.Web.Mvc.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Ivony.Html.Parser.Regulars.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
@@ -320,6 +296,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\JumonyDoc[Ivony.Html].chm" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

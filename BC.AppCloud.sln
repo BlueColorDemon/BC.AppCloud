@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BC.AppCloud", "BC.AppCloud\BC.AppCloud.csproj", "{7D7F0438-F149-48C6-9F6D-12027518D2F4}"
 EndProject
@@ -36,7 +36,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Html解析", "04-Html解
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BcHtmlHandle", "BcHtmlHandle\BcHtmlHandle.csproj", "{5B1600FF-051D-424D-A2F1-524DC66FA29D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonpTest", "JsonpTest\JsonpTest.csproj", "{F56C06AA-4F57-4858-B612-E25B3A330B2C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumonyTest", "JumonyTest\JumonyTest.csproj", "{BCB431BA-9A2C-4E9C-9A50-8ADBF5958849}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -84,10 +84,10 @@ Global
 		{5B1600FF-051D-424D-A2F1-524DC66FA29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B1600FF-051D-424D-A2F1-524DC66FA29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B1600FF-051D-424D-A2F1-524DC66FA29D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F56C06AA-4F57-4858-B612-E25B3A330B2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F56C06AA-4F57-4858-B612-E25B3A330B2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F56C06AA-4F57-4858-B612-E25B3A330B2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F56C06AA-4F57-4858-B612-E25B3A330B2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCB431BA-9A2C-4E9C-9A50-8ADBF5958849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB431BA-9A2C-4E9C-9A50-8ADBF5958849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB431BA-9A2C-4E9C-9A50-8ADBF5958849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB431BA-9A2C-4E9C-9A50-8ADBF5958849}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +104,6 @@ Global
 		{B07EA137-EC11-4A05-887E-C0C588A464AC} = {C39D67B0-5533-4878-BD84-8CC196E2599C}
 		{DC35E8EE-41FB-4ABF-A34F-6AD8AECD17E7} = {C39D67B0-5533-4878-BD84-8CC196E2599C}
 		{5B1600FF-051D-424D-A2F1-524DC66FA29D} = {7C65CD0B-B16E-487E-B622-A180DA8E2028}
-		{F56C06AA-4F57-4858-B612-E25B3A330B2C} = {7C65CD0B-B16E-487E-B622-A180DA8E2028}
+		{BCB431BA-9A2C-4E9C-9A50-8ADBF5958849} = {7C65CD0B-B16E-487E-B622-A180DA8E2028}
 	EndGlobalSection
 EndGlobal

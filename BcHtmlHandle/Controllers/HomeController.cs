@@ -4,7 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 using Ivony.Html;
+using Ivony.Html.Styles;
 using Ivony.Html.Parser;
 
 namespace BcHtmlHandle.Controllers
@@ -13,14 +15,6 @@ namespace BcHtmlHandle.Controllers
     {
         public ActionResult Index()
         {
-            var html = "";
-            var htmlParser = new JumonyParser();
-            var doc = htmlParser.Parse(html);
-
-            var css_class = doc.Find(".css_class");
-
-
-
             //ViewBag.Title = "Home Page";
 
             return View();
