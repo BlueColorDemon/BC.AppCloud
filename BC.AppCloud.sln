@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BC.AppCloud", "BC.AppCloud\BC.AppCloud.csproj", "{7D7F0438-F149-48C6-9F6D-12027518D2F4}"
 EndProject
@@ -37,6 +37,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BcHtmlHandle", "BcHtmlHandle\BcHtmlHandle.csproj", "{5B1600FF-051D-424D-A2F1-524DC66FA29D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumonyTest", "JumonyTest\JumonyTest.csproj", "{BCB431BA-9A2C-4E9C-9A50-8ADBF5958849}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-测试", "05-测试", "{2925AA20-AAD9-4D9D-9161-E29D2E02EC67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebService", "TestWebService\TestWebService.csproj", "{C92A90E7-C91A-4191-A3F3-833C69AC49DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -88,6 +92,10 @@ Global
 		{BCB431BA-9A2C-4E9C-9A50-8ADBF5958849}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCB431BA-9A2C-4E9C-9A50-8ADBF5958849}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCB431BA-9A2C-4E9C-9A50-8ADBF5958849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92A90E7-C91A-4191-A3F3-833C69AC49DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92A90E7-C91A-4191-A3F3-833C69AC49DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92A90E7-C91A-4191-A3F3-833C69AC49DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92A90E7-C91A-4191-A3F3-833C69AC49DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,5 +113,6 @@ Global
 		{DC35E8EE-41FB-4ABF-A34F-6AD8AECD17E7} = {C39D67B0-5533-4878-BD84-8CC196E2599C}
 		{5B1600FF-051D-424D-A2F1-524DC66FA29D} = {7C65CD0B-B16E-487E-B622-A180DA8E2028}
 		{BCB431BA-9A2C-4E9C-9A50-8ADBF5958849} = {7C65CD0B-B16E-487E-B622-A180DA8E2028}
+		{C92A90E7-C91A-4191-A3F3-833C69AC49DC} = {2925AA20-AAD9-4D9D-9161-E29D2E02EC67}
 	EndGlobalSection
 EndGlobal
