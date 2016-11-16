@@ -40,6 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiHttp\ApiStore\ApiStore.cs" />
+    <Compile Include="ApiHttp\RongYun\InterfaceUrl.cs" />
+    <Compile Include="ApiHttp\RongYun\RongCloudServer.cs" />
+    <Compile Include="ApiHttp\RongYun\RongHttpClient.cs" />
+    <Compile Include="ApiHttp\SystemApi.cs" />
     <Compile Include="Convert\ConvertUtility.cs" />
     <Compile Include="EFHelper\QueryableExtensions.cs" />
     <Compile Include="Enum\AlertEnum.cs" />
@@ -50,6 +55,7 @@
     <Compile Include="Text\FriendlyMessage.cs" />
     <Compile Include="Text\TextUtility.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
